@@ -1,0 +1,10 @@
+# THIS IS AN AUTO-GENERATED FILE; DO NOT MODIFY!
+# DO NOT EXCLUDE THIS FILE FROM THE VERSION CONTROL
+
+service:
+    name: son-service
+    registry: ghcr.io/chill-cloud/son-service
+    currentVersion: v1.0.0
+    stage: major
+    integration: dart
+    dependencies: {}
