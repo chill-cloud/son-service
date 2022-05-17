@@ -1,5 +1,6 @@
 service:
     name: son-service
     registry: ghcr.io/chill-cloud/son-service
+    stage: development
     integration: dart
     dependencies: {}
