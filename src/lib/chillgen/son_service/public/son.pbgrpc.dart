@@ -14,9 +14,9 @@ import 'son.pb.dart' as $0;
 export 'son.pb.dart';
 
 class SonServiceClient extends $grpc.Client {
-  static final _$sayHello =
+  static final _$sayHelloFromSon =
       $grpc.ClientMethod<$0.SonHelloRequest, $0.SonHelloResponse>(
-          '/SonService/SayHello',
+          '/SonService/SayHelloFromSon',
           ($0.SonHelloRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
               $0.SonHelloResponse.fromBuffer(value));
@@ -26,9 +26,10 @@ class SonServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$0.SonHelloResponse> sayHello($0.SonHelloRequest request,
+  $grpc.ResponseFuture<$0.SonHelloResponse> sayHelloFromSon(
+      $0.SonHelloRequest request,
       {$grpc.CallOptions? options}) {
-    return $createUnaryCall(_$sayHello, request, options: options);
+    return $createUnaryCall(_$sayHelloFromSon, request, options: options);
   }
 }
 
@@ -37,19 +38,19 @@ abstract class SonServiceBase extends $grpc.Service {
 
   SonServiceBase() {
     $addMethod($grpc.ServiceMethod<$0.SonHelloRequest, $0.SonHelloResponse>(
-        'SayHello',
-        sayHello_Pre,
+        'SayHelloFromSon',
+        sayHelloFromSon_Pre,
         false,
         false,
         ($core.List<$core.int> value) => $0.SonHelloRequest.fromBuffer(value),
         ($0.SonHelloResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$0.SonHelloResponse> sayHello_Pre(
+  $async.Future<$0.SonHelloResponse> sayHelloFromSon_Pre(
       $grpc.ServiceCall call, $async.Future<$0.SonHelloRequest> request) async {
-    return sayHello(call, await request);
+    return sayHelloFromSon(call, await request);
   }
 
-  $async.Future<$0.SonHelloResponse> sayHello(
+  $async.Future<$0.SonHelloResponse> sayHelloFromSon(
       $grpc.ServiceCall call, $0.SonHelloRequest request);
 }

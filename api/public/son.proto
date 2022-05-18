@@ -9,5 +9,5 @@ message SonHelloResponse {
 }
 
 service SonService {
-    rpc SayHello(SonHelloRequest) returns (SonHelloResponse);
+    rpc SayHelloFromSon(SonHelloRequest) returns (SonHelloResponse);
 }

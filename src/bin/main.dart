@@ -3,8 +3,8 @@ import 'package:service/chillgen/son_service/public/son.pbgrpc.dart';
 
 class SonService extends SonServiceBase {
   @override
-  Future<SonHelloResponse> sayHello(ServiceCall call, SonHelloRequest request) async {
-    return SonHelloResponse()..response = "yep I am!";
+  Future<SonHelloResponse> sayHelloFromSon(ServiceCall call, SonHelloRequest request) async {
+    return SonHelloResponse()..response = "yep I am v2!";
   }
 }
 

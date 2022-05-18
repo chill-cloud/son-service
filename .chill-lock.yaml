@@ -4,7 +4,8 @@
 service:
     name: son-service
     registry: ghcr.io/chill-cloud/son-service
-    currentVersion: v1.0.0
+    baseVersion: v1.0.0
+    currentVersion: v2.0.0
     stage: major
     integration: dart
     dependencies: {}

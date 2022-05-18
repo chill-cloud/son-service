@@ -6,7 +6,7 @@ on:
       - chill-v*
 jobs:
   build:
-    name: Deploy docs
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
